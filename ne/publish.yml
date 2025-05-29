@@ -1,0 +1,12 @@
+name: Publish to PyPI
+on: [release]
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Publish
+        uses: pypa/gh-action-pypi-publish@release/v1
+        with:
+          user: __token__
+          password: ${{ AgEIcHlwaS5vcmcCJGQzN2QwZTFjLTdmZTUtNDA4Yy1iZTlmLTljYTZlODA1YWQ3MAACKlszLCI4MTBmMDA3Ni1hODU5LTRlZjctODM1Yi03ODkyYzVkNzA3MDMiXQAABiBzYSSKc0iIfjioSd24Xo0ZkPl7W_6uLxPPYBolBK8L2w }}  
